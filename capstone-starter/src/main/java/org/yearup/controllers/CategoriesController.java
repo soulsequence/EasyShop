@@ -40,10 +40,10 @@ public class CategoriesController
     }
 
     // add the appropriate annotation for a get action
-    @GetMapping("/{categoryID}")
-    public Category getById(@PathVariable int categoryID)
+    @GetMapping("/{categoryId}")
+    public Category getById(@PathVariable int categoryId)
     {
-        return categoryDao.getById(categoryID);
+        return categoryDao.getById(categoryId);
     }
 
     // the url to return all products in category 1 would look like this
@@ -67,9 +67,11 @@ public class CategoriesController
 
     // add annotation to call this method for a PUT (update) action - the url path must include the categoryId
     // add annotation to ensure that only an ADMIN can call this function
-    public void updateCategory(@PathVariable int id, @RequestBody Category category)
+    @PutMapping("/{categoryId}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public void updateCategory(@PathVariable int categoryId, @RequestBody Category category)
     {
-        // update the category by id
+        categoryDao.update(categoryId, category);
     }
 
 
