@@ -1,5 +1,6 @@
 package org.yearup.controllers;
 
+import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -77,8 +78,11 @@ public class CategoriesController
 
     // add annotation to call this method for a DELETE action - the url path must include the categoryId
     // add annotation to ensure that only an ADMIN can call this function
-    public void deleteCategory(@PathVariable int id)
+    @DeleteMapping("/{categoryId}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteCategory(@PathVariable int categoryId)
     {
-        // delete the category by id
+        categoryDao.delete(categoryId);
     }
 }
