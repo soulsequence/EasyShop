@@ -25,8 +25,11 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
 
         String sql = "SELECT * FROM products " +
                 "WHERE (category_id = ? OR ? = -1) " +
-                "   AND ((price BETWEEN ? AND ?) OR (? = -1 AND ? = -1)) " +
-                "   AND (color = ? OR ? = '') ";
+                "AND ((price BETWEEN ? AND ?) " +
+                "OR (price >= ? AND ? = -1)" +
+                "OR (? = -1 AND price <= ?)" +
+                "OR (? = -1 AND ? = -1))" +
+                "AND (color = ? OR ? = '') ";
 
         categoryId = categoryId == null ? -1 : categoryId;
         minPrice = minPrice == null ? new BigDecimal("-1") : minPrice;
@@ -43,9 +46,13 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
             statement.setBigDecimal(4, maxPrice);
             statement.setBigDecimal(5, minPrice);
             statement.setBigDecimal(6, maxPrice);
+            statement.setBigDecimal(7, minPrice);
+            statement.setBigDecimal(8, maxPrice);
+            statement.setBigDecimal(9, minPrice);
+            statement.setBigDecimal(10, maxPrice);
 
-            statement.setString(7, color);
-            statement.setString(8, color);
+            statement.setString(11, color);
+            statement.setString(12, color);
 
             ResultSet row = statement.executeQuery();
 
