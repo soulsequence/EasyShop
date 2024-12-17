@@ -3,6 +3,7 @@ package org.yearup.controllers;
 import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.yearup.data.CategoryDao;
@@ -43,9 +44,13 @@ public class CategoriesController
 
     // add the appropriate annotation for a get action
     @GetMapping("/{categoryId}")
-    public Category getById(@PathVariable int categoryId)
+    public ResponseEntity<Category> getById(@PathVariable int categoryId)
     {
-        return categoryDao.getById(categoryId);
+        Category category = categoryDao.getById(categoryId);
+        if (category == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+        return ResponseEntity.ok(category);
     }
 
     // the url to return all products in category 1 would look like this
