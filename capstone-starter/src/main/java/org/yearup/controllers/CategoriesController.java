@@ -19,6 +19,7 @@ import java.util.List;
 // add annotation to allow cross site origin requests
 
 @RestController
+@CrossOrigin
 @RequestMapping("/categories")
 public class CategoriesController
 {
