@@ -1,43 +1,37 @@
 package org.yearup.controllers;
 
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.yearup.data.ProductDao;
-import org.yearup.data.ShoppingCartDao;
-import org.yearup.data.ShoppingCartRepository;
 import org.yearup.data.UserDao;
-import org.yearup.models.Product;
 import org.yearup.models.ShoppingCart;
-import org.yearup.models.ShoppingCartItem;
 import org.yearup.models.User;
+import org.yearup.services.ShoppingCartService;
 
 import java.security.Principal;
-import java.util.List;
 
 // convert this class to a REST controller
 // only logged in users should have access to these actions
 
 @RestController
 @RequestMapping("/cart")
+@CrossOrigin
 public class ShoppingCartController
 {
     // a shopping cart requires
-    private ShoppingCartDao shoppingCartDao;
-    private ShoppingCartRepository shoppingCartRepository;
-    private UserDao userDao;
+    private final ShoppingCartService shoppingCartService;
+    private final UserDao userDao;
     private ProductDao productDao;
 
     @Autowired
-    public ShoppingCartController(ShoppingCartDao shoppingCartDao, UserDao userDao, ProductDao productDao,
-                                  ShoppingCartRepository shoppingCartRepository) {
-        this.shoppingCartDao = shoppingCartDao;
+    public ShoppingCartController(UserDao userDao, ProductDao productDao,
+                                  ShoppingCartService shoppingCartService) {
         this.userDao = userDao;
         this.productDao = productDao;
-        this.shoppingCartRepository = shoppingCartRepository;
+        this.shoppingCartService = shoppingCartService;
     }
 
 //    @GetMapping
@@ -52,8 +46,7 @@ public class ShoppingCartController
             String userName = principal.getName();
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
-
-            return shoppingCartRepository.findByUserId(userId);
+            return shoppingCartService.getByUserId(user.getId());
         } catch(Exception e) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
         }
@@ -90,18 +83,7 @@ public class ShoppingCartController
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
 
-            ShoppingCart cartItem = shoppingCartRepository.findByUserIdAndProductId(userId, productId);
-            if(cartItem != null) {
-                cartItem.setQuantity(cartItem.getQuantity() + 1);
-            } else {
-                cartItem = new ShoppingCart();
-                cartItem.setUserId(userId);
-                cartItem.setProductId(productId);
-                cartItem.setUserId(1);
-                cartItem.setQuantity(1);
-            }
-
-            return shoppingCartRepository.save(cartItem);
+            return shoppingCartService.saveProductToCart(userId, productId);
         } catch(Exception e) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
         }

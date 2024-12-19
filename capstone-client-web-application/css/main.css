@@ -11,6 +11,56 @@ header
     box-shadow: 5px 2px #eee;
 }
 
+img {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+body #site-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+section #character-pane {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    min-width: 972px;
+    background-image: url("/images/backgrounds/bg4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+section #character-pane img {
+    padding-top: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 530px;
+}
+
+section #store-content {
+    overflow-y: auto;
+    min-width: 900px;
+    max-width: 900px;
+}
+
 header img
 {
     height: 100%;
@@ -61,16 +111,22 @@ main > .filter-box
 }
 
 main #min-price .slider-selection {
-    background: #BABABA;
+    /*background: #BABABA;*/
 }
 
 main > .content
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    height: 87vh;
-    overflow: scroll;
+    height: 100%;
+    overflow-y: auto;
+    padding: 15px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*width: 100%;*/
+    /*padding: 15px;*/
+    /*height: 87vh;*/
+    /*overflow: scroll;*/
 }
 
 main > .content-form
@@ -169,7 +225,7 @@ main > .content-form .cart-item
     justify-content: center;
     position: absolute;
     top: 0;
-    background-color: #777777aa;
+    /*background-color: #777777aa;*/
     width: 100vw;
     height: 100vh;
     z-index: 1000;
@@ -187,7 +243,8 @@ main > .content-form .cart-item
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 100vw;
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
     padding-top: 5px;
     opacity: 90%;
 }

@@ -23,6 +23,7 @@ public class ShoppingCart
     private long productId;
 
     private int quantity;
+
 //
 //    private Map<Integer, ShoppingCartItem> items = new HashMap<>();
 //
