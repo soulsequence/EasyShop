@@ -1,33 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="905af4f0-f8fb-4a5b-95c9-a22e234e80e5" name="Changes" comment="" />
+    <list default="true" id="1d310c00-8bea-4d72-a3a3-03175525c968" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/css/lib/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/css/lib/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/characters/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/mustache.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/mustache.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/templates/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2qAsYyTpQHzNogo8B93OwfgGpKs" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2qM4Ti9VKpsDxuSB9QjmMnMNec8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Student/Documents/pluralsight/capstones/EasyShopBackend/capstone-starter"
+    "Spring Boot.EasyshopApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/patra/Programming and Development/YearUP/pluralsight/capstones/EasyShopBackend/capstone-client-web-application",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="EasyshopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="easyshop-capstone-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.yearup.EasyshopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="905af4f0-f8fb-4a5b-95c9-a22e234e80e5" name="Changes" comment="" />
-      <created>1734116768104</created>
+      <changelist id="1d310c00-8bea-4d72-a3a3-03175525c968" name="Changes" comment="" />
+      <created>1734459121568</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734116768104</updated>
+      <updated>1734459121568</updated>
+      <workItem from="1734459122724" duration="3120000" />
+      <workItem from="1734617211695" duration="11324000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
