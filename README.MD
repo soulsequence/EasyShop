@@ -57,6 +57,11 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ### Frontend
 ![Frontend](imgs/website.PNG)
+
+## Practice with JPA
+Even though I couldn't implement it (would require a rewrite of the entire skeleton code,) I learned about the basics of JPA and how to load the dependency into a project.
+![JPAAttempt](imgs/lombokAndJPA.PNG)
+
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
