@@ -1,17 +1,18 @@
-# Project Title
+# EasyShop Backend
 
-## Description of the Project
+## Class Diagram
+![Class Diagram](imgs/class_diagram.PNG)
 
-Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
-
-![Class Diagram](path/to/your/class_diagram.png)
+## Project Description
+Easy Shop is a simple, mock-up website. The backend uses SpringBoot to handle RESTful API calls. The original template included bugs that I needed to fix to make it operational.
 
 ## User Stories
-
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
-
-- As a user, I want to be able to input my data, so that the application can process it accordingly.
-- As a user, I want to receive immediate feedback, so I can understand what to do next.
+> - As a user I should be able to order items by category so I can buy what I exactly want.
+> - As a user I should be able to log in to the website to see my unique information.
+> - As a user, I should be able to add all the items I want to buy to a cart, so that I can purchase everything I want at once.
+> - As a admin, I should be able to add items to categories so that users can see an updated inventory.
+> - As a user I should be able to search for a product and get the correct information, so I can purchase what I exactly want.
+> - As an administrator I should be able to update products so that my customers can see an accurate inventory of the items we have.
 
 ## Setup
 
@@ -21,6 +22,13 @@ Instructions on how to set up and run the project using IntelliJ IDEA.
 
 - IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from [here](https://www.jetbrains.com/idea/download/).
 - Java SDK: Make sure Java SDK is installed and configured in IntelliJ.
+- MySQL or MySQLWorkbench for configuring the database schema.
+- Optional: Postman to test API requests.
+
+### Setting up the database in MySQLWorkbench
+1. Open MySQL Workbench
+2. Open the Schema File
+3. Execute the Schema File
 
 ### Running the Application in IntelliJ
 
@@ -30,43 +38,38 @@ Follow these steps to get your application running within IntelliJ IDEA:
 2. Select "Open" and navigate to the directory where you cloned or downloaded the project.
 3. After the project opens, wait for IntelliJ to index the files and set up the project.
 4. Find the main class with the `public static void main(String[] args)` method.
-5. Right-click on the file and select 'Run 'YourMainClassName.main()'' to start the application.
+5. Right-click on the file and select 'Run 'EasyshopApplication.main()'' to start the application.
 
 ## Technologies Used
 
-- Java: Mention the version you are using.
-- Any additional libraries or frameworks used in the project.
+- IntelliJ IDEA 2023.3.3 (Ultimate Edition)
+- Java 17 (Amazon Corretto 17.0.12)
+- MySQL
+- Postman
+- Springboot framework
 
 ## Demo
+### Console Start
+![Springboot](imgs/consoleStart.PNG)
 
-Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
+### Postman
+![Postman](imgs/Postman.PNG)
 
-![Application Screenshot](path/to/your/screenshot.png)
-
+### Frontend
+![Frontend](imgs/website.PNG)
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
 
-- Additional feature to be developed.
-- Improvement of current functionalities.
+- Implement Shopping Cart
+- Implement User Profile
+- Implement Checkout
+- Implement Search Bar
 
-## Resources
-
-List resources such as tutorials, articles, or documentation that helped you during the project.
-https://www.baeldung.com/jpa-composite-primary-keys
-https://spring.io/guides/gs/accessing-data-jpa
-- [Java Programming Tutorial](https://www.example.com)
-- [Effective Java](https://www.example.com)
-
-## Team Members
-
-- **Name 1** - Specific contributions or roles.
-- **Name 2** - Specific contributions or roles.
+## Resources (used for JPA practice)
+- https://www.baeldung.com/jpa-composite-primary-keys
+- https://spring.io/guides/gs/accessing-data-jpa
 
 ## Thanks
+Thank you to Raymond for continuous support and guidance.
 
-Express gratitude towards those who provided help, guidance, or resources:
-
-- Thank you to Raymond for continuous support and guidance.
-- A special thanks to all teammates for their dedication and teamwork.
-- 

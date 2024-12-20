@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d310c00-8bea-4d72-a3a3-03175525c968" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/css/lib/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/css/lib/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/bg5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/images/backgrounds/characters/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/axios.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/mustache.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/js/lib/mustache.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-client-web-application/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-client-web-application/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,7 +47,7 @@
     "Spring Boot.EasyshopApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/patra/Programming and Development/YearUP/pluralsight/capstones/EasyShopBackend/capstone-client-web-application",
+    "last_opened_file_path": "C:/Users/patra/Programming and Development/YearUP/pluralsight/capstones/capstone-client-web-application",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,6 +76,7 @@
       <updated>1734459121568</updated>
       <workItem from="1734459122724" duration="3120000" />
       <workItem from="1734617211695" duration="11324000" />
+      <workItem from="1734672299385" duration="3000000" />
     </task>
     <servers />
   </component>
